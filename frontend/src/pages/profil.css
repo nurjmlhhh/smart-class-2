@@ -1,0 +1,111 @@
+/* Profil Container */
+.profil-container {
+    font-family: Arial, sans-serif;
+    background-color: #bfd4eb;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+    margin-top: 120px;
+  }
+  
+  h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Profil Form */
+  .profil-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .profil-form label {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .profil-form input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .profil-form button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .profil-form button[type="submit"] {
+    background-color: #007bff;
+  }
+  
+  .profil-form button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  .profil-form button[type="button"] {
+    background-color: #6c757d;
+  }
+  
+  .profil-form button[type="button"]:hover {
+    background-color: #5a6268;
+  }
+  
+  
+  /* Display Section */
+  .display-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .display-section p {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .display-section button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .display-section .edit-button {
+    background-color: #007bff;
+  }
+  
+  .display-section .edit-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .display-section .delete-button {
+    background-color: #dc3545;
+  }
+  
+  .display-section .delete-button:hover {
+    background-color: #c82333;
+  }
+  
+  .loading-text {
+    text-align: center;
+    font-size: 16px;
+    color: #555;
+  }
+  

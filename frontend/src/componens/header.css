@@ -1,0 +1,38 @@
+.header {
+    position: relative; /* Needed for absolute positioning of .profile */
+  }
+  
+  .header .profile {
+    position: absolute;
+    top: 120%; right: 2rem;
+    background-color: var(--white);
+    border-radius: .5rem;
+    padding: 1.5rem;
+    text-align: center;
+    overflow: hidden;
+    transform-origin: top right;
+    transform: scale(0);
+    transition: .2s linear;
+    width: 30rem;
+  }
+  
+  .header .flex:hover .profile, 
+  .header .profile:focus-within {
+    transform: scale(1);
+  }
+  
+  .header .profile .image {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    object-fit: contain;
+    margin-bottom: 1rem;
+  }
+  
+  .header .profile .name {
+    font-size: 2rem;
+    color: var(--black);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }

@@ -1,0 +1,295 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    margin-top: 60px;
+  }
+  
+  .dashboard-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Header Styles */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .add-button,
+  .sort-button {
+    background-color: #78B7D0;
+    color: white;
+    border: none;
+    padding: 6px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .add-button:hover,
+  .sort-button:hover {
+    background-color: #5e94aa;
+  }
+  
+  .search-container {
+    display: flex;
+    align-items: center;
+    width: 20%;
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-left: 10px;
+  }
+  
+  /* Class Grid Styles */
+  .class-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.class-card {
+    background: #ffffff;
+    border: 1px solid #86bde4;
+    box-shadow: 0 20px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 150px; /* Adjusted for better structure */
+    
+}
+
+
+.class-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(103, 153, 197, 0.5), transparent);
+    transition: transform 0.5s ease-in-out;
+    transform: scale(0);
+    opacity: 0.8;
+    pointer-events: none;
+}
+
+.class-card:hover::before {
+    transform: scale(1);
+    animation: rotateGlow 2s infinite linear;
+}
+
+.class-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(82, 159, 222, 0.2);
+}
+
+.class-name {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    white-space: nowrap; /* Prevents text from wrapping */
+    overflow: hidden; /* Hides overflowing text */
+    text-overflow: ellipsis; /* Adds ... to overflowing text */
+}
+
+.class-code {
+    color: #555;
+    white-space: nowrap; /* Prevents text from wrapping */
+    overflow: hidden; /* Hides overflowing text */
+    text-overflow: ellipsis; /* Adds ... to overflowing text */
+}
+
+.card-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.delete-button,
+.edit-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.delete-button {
+    color: #e74c3c;
+}
+
+.delete-button:hover {
+    color: #c0392b;
+}
+
+.edit-button {
+    color: #3498db;
+}
+
+.edit-button:hover {
+    color: #2980b9;
+}
+
+@keyframes rotateGlow {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+    100% {
+        transform: rotate(360deg) scale(1);
+    }
+}
+
+
+  .delete-button,
+  .edit-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 10px;
+  }
+  
+  .delete-button {
+    color: #e74c3c;
+  }
+  
+  .delete-button:hover {
+    color: #c0392b;
+  }
+  
+  .edit-button {
+    color: #3498db;
+  }
+  
+  .edit-button:hover {
+    color: #2980b9;
+  }
+  
+  /* Form Styles */
+  .form-container {
+    margin-top: 30px;
+  }
+  
+  .form {
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  .form-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .form-input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  .form-actions {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .submit-button,
+  .cancel-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+  }
+  
+  .cancel-button {
+    background-color: #ccc;
+    color: black;
+  }
+  
+  .submit-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .cancel-button:hover {
+    background-color: #999;
+  }
+  
+  /* Add overlay for the pop-up */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Center the form and make it smaller */
+.form-container {
+  background: white;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px; /* Smaller width */
+  z-index: 1001;
+}
+
+.form-title {
+  font-size: 20px;
+  margin-bottom: 15px;
+  text-align: center; /* Centered title */
+}
+
+/* Add a close button for the pop-up */
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #555;
+}
+
+.close-button:hover {
+  color: #000;
+}

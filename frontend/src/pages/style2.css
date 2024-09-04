@@ -1,0 +1,331 @@
+/* :root{
+    --main-color: #8e44ad;
+    --red: #e74c3c;
+    --oragen : #f39c12;
+    --white: #fff;
+    --black: #2c3e50;
+    --light-color: #888;
+    --light-bg: #eee;
+    --light-bg: #f5f5f5;
+    --border: .1rem solid rgba(0,0,0,.2);
+}
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+*::selection{
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+::-webkit-scrollbar{
+    height: 0.5rem;
+    width: 1rem;
+}
+
+::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--main-color);
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: var(--light-bg);
+}
+
+section{
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+    background-color: var(--white);
+    border-bottom: var(--border);
+} */
+/* 
+.glow-text {
+    position: relative;
+    color: #ffffff;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .glow-text::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(41, 95, 152, 0.8), transparent);
+    transform: translateX(-50%) rotate(0deg);
+    transform-origin: center;
+    animation: rotate-glow 4s infinite linear;
+    pointer-events: none;
+    z-index: -1;
+  }
+  
+  @keyframes rotate-glow {
+    0% {
+      transform: translateX(-50%) rotate(0deg);
+    }
+    100% {
+      transform: translateX(-50%) rotate(360deg);
+    }
+  }
+   */
+
+
+/* 
+  .con{
+    background-color: #d5ddec;
+  }
+  .app-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .glow-box {
+    position: relative;
+    padding: 40px;
+    max-width: 600px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .glow-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(90deg, transparent, rgba(61, 102, 146, 0.8), transparent);
+    transform: translateX(-50%) rotate(0deg);
+    transform-origin: center;
+    animation: rotate-glow 6s infinite linear;
+    pointer-events: none;
+    z-index: 0;
+  }
+  
+  .glow-text {
+    position: relative;
+    color: #295F98;
+    font-size: 2.5rem;
+    font-weight: bold;
+    z-index: 1;
+    margin-bottom: 20px;
+  }
+  
+  .description {
+    position: relative;
+    color: #0d0d0e;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    z-index: 1;
+  }
+  
+  .highlight {
+    color: #295F98;
+    font-weight: bold;
+  }
+  
+  @keyframes rotate-glow {
+    0% {
+      transform: translateX(-50%) rotate(0deg);
+    }
+    100% {
+      transform: translateX(-50%) rotate(360deg);
+    }
+  }
+   */
+
+   .con {
+    background-color: #d5ddec;
+    margin-top: 30px;
+  }
+  
+  .app-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+  }
+  
+  .glow-box {
+    position: relative;
+    padding: 30px;
+    max-width: 800px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+  }
+  
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center content horizontally */
+  }
+  
+  .logo-image {
+    max-width: 200px;
+    margin-right: 20px;
+    filter: drop-shadow(0 0 10px rgba(41, 95, 152, 0.8));
+    z-index: 1;
+  }
+  
+  .text-content {
+    flex: 1;
+  }
+  
+  .glow-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(90deg, transparent, rgba(41, 95, 152, 0.8), transparent);
+    transform: translateX(-50%) rotate(0deg);
+    transform-origin: center;
+    animation: rotate-glow 6s infinite linear;
+    pointer-events: none;
+    z-index: 0;
+  }
+  
+  .glow-text {
+    position: relative;
+    font-size: 2.5rem;
+    font-weight: bold;
+    z-index: 1;
+    margin-bottom: 20px;
+  }
+  
+  .description {
+    position: relative;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    z-index: 1;
+  }
+  
+  .highlight {
+    font-weight: bold;
+  }
+  
+  @keyframes rotate-glow {
+    0% {
+      transform: translateX(-50%) rotate(0deg);
+    }
+    100% {
+      transform: translateX(-50%) rotate(360deg);
+    }
+  }
+ 
+  /* optional custom styles */
+/* .footer {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .footer a {
+    color: #4fd1c5; 
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  } */
+
+
+/* Global Styles */
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: Arial, sans-serif;
+} */
+
+/* Page Structure */
+/* body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 40px; 
+} */
+
+.content-wrap {
+  flex: 1;
+  padding: 10px;
+}
+
+/* Footer Styles */
+.footer {
+  z-index: 1;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #6caec9; /* Solid background color */
+  color: white;
+  text-align: center;
+  padding: 8px 0; /* Reduced padding for a smaller footer */
+}
+
+.footer .container {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0px; /* Reduced margin for a smaller footer */
+}
+
+.social-icons a {
+  color: white;
+  margin: 0 10px;
+  font-size: 13px; /* Slightly smaller icons */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #add8e6;
+}
+
+.bottom-text p {
+  font-size: 10px; /* Reduced font size */
+  color: #e0e0e0;
+}

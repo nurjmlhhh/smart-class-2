@@ -1,0 +1,271 @@
+/* General Container */
+.dn {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  textarea{
+    height: 150px;
+  }
+  .tata {
+    font-weight: bold; 
+    font-size: 24px; 
+    color: #55b5cd; 
+    text-shadow: 1px 7px 5px rgba(9, 3, 3, 0.2); 
+}
+  .dan{
+    margin-top: 60px;
+  }
+  /* Header */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Grid for Posts and Tasks */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  /* Individual Card */
+  .card {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  
+  /* Action Buttons */
+  .action-buttons {
+    margin-top: 10px;
+  }
+  
+  .delete-button,
+  .edit-button {
+    background-color: #007bff;
+    color: white;
+    padding: 1px 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  .delete-button {
+    background-color: #dc3545;
+  }
+  
+  .delete-button:hover,
+  .edit-button:hover {
+    background-color: #0056b3;
+  }
+  /* Popup container */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Overlay background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Popup content */
+.popup-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Close button */
+.close-button {
+  position: absolute;
+  top: 1px;
+  right: 10px;
+  /* background: none; */
+  /* border: none; */
+  font-size: 20px;
+  cursor: pointer;
+  color: #333;
+}
+
+/* Buttons style */
+.popup-content button {
+  background-color: #689ed9;
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 8px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.popup-content button:hover {
+  background-color: #0056b3;
+}
+
+/* Input and textarea style */
+.popup-content input,
+.popup-content textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+/* Headings */
+.popup-content h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+/* Animation for popup */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.text{
+  height: 150px;
+}
+  /* Toggle and Add New Buttons */
+  .toggle-button,
+  .add-button {
+    background-color: #78B7D0;
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 14px;
+  }
+  
+  .toggle-button:hover,
+  .add-button:hover {
+    background-color: #12668a;
+  }
+
+  /* Container grid style */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Individual card style */
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Action buttons inside the card */
+.action-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.delete-button, .update-button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 3px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 12px;
+}
+
+.update-button {
+  background-color: #2196f3;
+}
+
+.delete-button:hover {
+  background-color: #d32f2f;
+}
+
+.update-button:hover {
+  background-color: #1976d2;
+}
+
+/* Popup container style */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Popup content style */
+.popup-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 500px;
+  max-width: 80%;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+/* Close button style */
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Save button style */
+.save-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.save-button:hover {
+  background-color: #45a049;
+}
+
+  

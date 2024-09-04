@@ -1,0 +1,100 @@
+/* General Container */
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 85vh;
+    font-family: Arial, sans-serif;
+    background-color: #d5ddec;
+  }
+  
+  /* Content Wrapper */
+  .content-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 50px; /* Jarak antara lingkaran dan teks */
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #6eadc6;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3), 
+                -5px -5px 10px rgba(255, 255, 255, 0.5);
+    transform: translateY(-3px);
+  }
+  
+  /* Rotating Circle */
+  .circle-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .rot{
+    font-weight: 300;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+  .rotating-circle {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: conic-gradient(
+        #48CFCB 0%,
+        #98DED9 25%,
+        #78B7D0 50%,
+        #98DED9 75%,
+        #48CFCB 100%,
+        red 50%,
+        #78B7D0 50%,
+        #48CFCB 0%,
+        #98DED9 25%,
+        red 50%,
+        #78B7D0 50%,
+        #98DED9 75%,
+        #48CFCB 100%
+    );
+        animation: rotate 4s linear infinite;
+  }
+  
+  .circle-text {
+    font-size: 1.2em;
+    color: #007bff;
+    z-index: 1;
+    text-align: center;
+  }
+  
+  /* Animation */
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Content Section */
+  .about-content {
+    max-width: 500px;
+  }
+  
+  .about-content h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .about-content p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .about-content strong {
+    color: #16589e;
+  }
+  
